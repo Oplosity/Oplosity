@@ -1,0 +1,143 @@
+
+
+body{
+    background-color:#005DFF ;
+    padding-left: 10rem;
+}
+
+/*slection style */
+::selection{
+    color: #005DFF;
+    background: #fff;
+}
+
+
+.grid-container {
+    display: grid;
+    justify-content: end;
+    margin-right: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+  .logo{
+    display: block;
+    justify-content: start;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 98px;
+    position: absolute;
+    font-style: normal;
+    color: #fff;
+  }
+  .about {
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.work {
+    border-width: 5px 5px 5px 0px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+/* a tag style removal */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+ /* Your existing styles for .box-content */
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 10rem;
+    margin-right: 20px;
+    height: 500px;
+}
+
+.title {
+  /* Your existing styles for .rectangle-box */
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: start;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+.info {
+    /* Your existing styles for .box-content */
+    border-width: 0px 5px 5px 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    
+    text-decoration: none;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  span{
+    font-family: "Zen Dots", sans-serif;
+    font-style: normal;
+    color: #fff;
+
+  }
+p {
+    width: 33rem; 
+    text-align: center;
+    font-family: "Sunflower", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    text-align: left;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .grid-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    p{
+        width: 20rem;
+        font-size: large;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .work{
+        font-size: small;
+    }
+    .about{
+        font-size: small;
+    }
+    section{
+        width: 100%;
+    }
+}
